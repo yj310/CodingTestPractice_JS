@@ -51,12 +51,12 @@ function solution(numbers, hand) {
             answer += 'R';
             right = numbers[i];
         } else if(mkey.indexOf(numbers[i]) != -1) {
-            nx = (numbers[i]-1) % 3;
-            ny = parseInt((numbers[i]-1) / 3);
-            lx = (left-1) % 3;
-            ly = parseInt((left-1) / 3);
-            rx = (right-1) % 3;
-            ry = parseInt((right-1) / 3);
+            var nx = (numbers[i]-1) % 3;
+            var ny = Math.floor((numbers[i]-1) / 3);
+            var lx = (left-1) % 3;
+            var ly = Math.floor((left-1) / 3);
+            var rx = (right-1) % 3;
+            var ry = Math.floor((right-1) / 3);
 
             var leftcount = Math.abs(nx - lx) + Math.abs(ny - ly);
             var rightcount = Math.abs(nx - rx) + Math.abs(ny - ry);
@@ -73,6 +73,11 @@ function solution(numbers, hand) {
                 right = numbers[i];
             } else if(rightcount == leftcount) {
                 answer += hand;
+                if(hand == 'L') {
+                    left = numbers[i];
+                } else {
+                    right = numbers[i];
+                }
             }
         }
     }
