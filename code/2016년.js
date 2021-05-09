@@ -15,12 +15,12 @@
 function solution(a, b) {
     var answer = '';
 
-    week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-    month_30 = [4, 6, 9, 11];
-    month_31 = [1, 3, 5, 7, 8, 10, 12];
-    febDays = 29;           // 2016년은 윤년입니다.
-    dayCount = 0;
-    firstDayWeek = 'FRI';   // 2016년 1월 1일은 금요일입니다.
+    var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+    var month_30 = [4, 6, 9, 11];
+    var month_31 = [1, 3, 5, 7, 8, 10, 12];
+    var febDays = 29;           // 2016년은 윤년입니다.
+    var dayCount = 0;
+    var firstDayWeek = 'FRI';   // 2016년 1월 1일은 금요일입니다.
 
     dayCount += b;
 
