@@ -10,12 +10,12 @@ function solution(n) {
     var answer = 0;
 
     var isPrime;
-    var array;
+    var array = [];
 
     for(var i = 2; i <= n; i++) {
         isPrime = true;
-        for(var j = 2; j < i; j++) {
-            if(i % j == 0) {
+        for(var j = 0; j < array.length; j++) {
+            if(i % array[j] == 0) {
                 isPrime = false;
                 break;
             }
