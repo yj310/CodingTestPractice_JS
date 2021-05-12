@@ -10,16 +10,19 @@ function solution(n) {
     var answer = 0;
 
     var isPrime;
+    var array;
 
     for(var i = 2; i <= n; i++) {
         isPrime = true;
         for(var j = 2; j < i; j++) {
             if(i % j == 0) {
                 isPrime = false;
+                break;
             }
         }
         if(isPrime) {
             answer++;
+            array.push(i);
         }
     }
 
