@@ -80,7 +80,7 @@ const plus = calculator.plus(5, 5);
 console.log(plus);
 */
 
-
+/*
 //const title = document.getElementById("title");
 const title = document.querySelector("#title");
 
@@ -91,3 +91,12 @@ console.dir(document);
 title.innerHTML = "Hi! From JS";
 title.style.color = "red";
 document.title = "I own you now";
+*/
+
+const title = document.querySelector("#title");
+
+function handleResize(event) {
+    title.style.color = "blue";
+}
+
+window.addEventListener("resize", handleResize);
