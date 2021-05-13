@@ -103,6 +103,7 @@ function handleResize(event) {
 window.addEventListener("resize", handleResize);
 */
 
+/*
 if(10 === 10) {
     console.log("hi");
 } else {
@@ -122,4 +123,13 @@ if(10 === '10') {
     console.log("lalala");
 } else {
     console.log("ho");
+}
+*/
+
+const age = prompt("How old are you");
+
+if(age > 19) {
+    console.log("you can drink");
+} else {
+    console.log("you cant")
 }
