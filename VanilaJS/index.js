@@ -22,8 +22,35 @@ const wat = 666;
 const wat = 55.1;
 */
 
-
+/*
 // Array
 const something = "Something"
 const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", something];
 console.log(daysOfWeek)
+*/
+
+
+// Object
+const nicoInfo = {
+    name: "Nico", 
+    age: 33,
+    gender: "Male", 
+    isHandsome: true, 
+    favMovies: ["Along the gods", "LOTR", "Oldboy"], 
+    favFood: [
+        {
+            name: "Kimchi",
+            fatty: false
+        }, 
+        {
+            name: "Chees burer", 
+            fatty: true
+        }
+    ]
+}
+
+console.log(nicoInfo.gender);
+nicoInfo.gender = "Female";
+console.log(nicoInfo.gender);
+
+console.log(nicoInfo);
