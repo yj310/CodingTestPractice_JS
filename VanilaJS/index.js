@@ -69,7 +69,7 @@ greetNicolas = sayHello("Nicolas", 31);
 console.log(greetNicolas);
 */
 
-
+/*
 const calculator = {
     plus: function(a, b) {
         return a + b;
@@ -78,5 +78,16 @@ const calculator = {
 
 const plus = calculator.plus(5, 5);
 console.log(plus);
+*/
 
 
+//const title = document.getElementById("title");
+const title = document.querySelector("#title");
+
+console.log(title);
+console.dir(title);
+console.dir(document);
+
+title.innerHTML = "Hi! From JS";
+title.style.color = "red";
+document.title = "I own you now";
