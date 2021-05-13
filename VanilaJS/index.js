@@ -56,7 +56,7 @@ console.log(nicoInfo.gender);
 console.log(nicoInfo);
 */
 
-
+/*
 function sayHello(name, age) {
     console.log('Hello ' + name + '!');
     return `Hello ${name} you are ${age} years old`;
@@ -67,3 +67,16 @@ sayHello("del", 23);
 
 greetNicolas = sayHello("Nicolas", 31);
 console.log(greetNicolas);
+*/
+
+
+const calculator = {
+    plus: function(a, b) {
+        return a + b;
+    }
+}
+
+const plus = calculator.plus(5, 5);
+console.log(plus);
+
+
