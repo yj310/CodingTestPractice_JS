@@ -29,7 +29,7 @@ const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", something];
 console.log(daysOfWeek)
 */
 
-
+/*
 // Object
 const nicoInfo = {
     name: "Nico", 
@@ -54,3 +54,16 @@ nicoInfo.gender = "Female";
 console.log(nicoInfo.gender);
 
 console.log(nicoInfo);
+*/
+
+
+function sayHello(name, age) {
+    console.log('Hello ' + name + '!');
+    return `Hello ${name} you are ${age} years old`;
+}
+
+sayHello("nick", 12);
+sayHello("del", 23);
+
+greetNicolas = sayHello("Nicolas", 31);
+console.log(greetNicolas);
