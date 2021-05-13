@@ -21,13 +21,10 @@ function solution(nums) {
         }
     }
     
-    // 중복되는 요소 제거하기
-    array = array.filter((item, index) => array.indexOf(item) == index);
-    
-
+    // 각 요소가 소수인지 판단
     for(var i = 0; i < array.length; i++) {
         isPrime = true;
-        for(var j = 2; j < array[i] ; j++) {
+        for(var j = 2; j < array[i]; j++) {
             if(array[i] % j == 0) {
                 isPrime = false;
             }
