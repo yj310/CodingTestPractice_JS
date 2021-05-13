@@ -93,6 +93,7 @@ title.style.color = "red";
 document.title = "I own you now";
 */
 
+/*
 const title = document.querySelector("#title");
 
 function handleResize(event) {
@@ -100,3 +101,25 @@ function handleResize(event) {
 }
 
 window.addEventListener("resize", handleResize);
+*/
+
+if(10 === 10) {
+    console.log("hi");
+} else {
+    console.log("ho");
+}
+
+if(10 === '10') {
+    console.log("hi");
+} else {
+    console.log("ho");
+}
+
+
+if(10 === '10') {
+    console.log("hi");
+} else if("10" === "10") {
+    console.log("lalala");
+} else {
+    console.log("ho");
+}
