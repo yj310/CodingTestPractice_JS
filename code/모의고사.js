@@ -10,22 +10,15 @@ function solution(answers) {
     var student3Count = 0;
 
     for(var i = 0; i < answers.length; i++) {
-        if(answers[i] === student1[i]) student1Count++;
-        if(answers[i] === student2[i]) student2Count++;
-        if(answers[i] === student3[i]) student3Count++;
+        if(answers[i] === student1[i % student1.length]) student1Count++;
+        if(answers[i] === student2[i % student2.length]) student2Count++;
+        if(answers[i] === student3[i % student3.length]) student3Count++;
     }
 
     var maxScore = Math.max(student1Count, student2Count, student3Count);
     if(student1Count === maxScore) answer.push(1);
     if(student2Count === maxScore) answer.push(2);
     if(student3Count === maxScore) answer.push(3);
-
-    console.log(maxScore)
-    console.log(student1Count)
-    console.log(student2Count)
-    console.log(student3Count)
-
-
 
     return answer;
 }
